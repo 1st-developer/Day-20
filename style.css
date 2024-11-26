@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #fff;
+}
+
+.page-one {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-result {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-51rem);
+    transition: transform 1s ease;
+    transition-duration: 1.7s;
+}
+
+.app-result.show {
+    transform: translateY(0);
+}
+
+.app-result .text {
+    display: flex;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px 50px;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app-result .text ion-icon {
+    cursor: pointer;
+    border-radius: 30rem;
+    transition: .2s ease;
+}
+
+.app-result .text ion-icon:hover {
+    background: #dddd;
+}
+
+.app-result .text h2 {
+    font-size: 3rem;
+    color: red;
+    font-weight: bold;
+}
+
+.all {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    width: 500px;
+    height: 100%;
+    margin: 50px 0 0 40px;
+}
+
+.result .input-box {
+    width: 100%;
+    height: 80px;
+    background: #4c4c4c;
+    margin: 20px 0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+::placeholder {
+    font-weight: 500;
+    color: #bbbb;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background: transparent;
+}
+
+.btn {
+    width: 100%;
+    color: #bbbb;
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.btn button {
+    width: 100%;
+    height: 70px;
+    border: 2px solid #bbbb;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 6px;
+    background: transparent;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.btn .code {
+    border: none;
+    background: #313131;
+    transition: .2s ease;
+}
+
+.btn .code:hover {
+    background: #4c4c4c;
+}
+
+.btn .sign:hover {
+    background: #ad0101;
+    border: none;
+}
+
+.result .details {
+    width: 100%;
+    display: grid;
+    margin: 40px 0;
+    gap: 30px;
+    text-align: center;
+}
+
+.result .details a {
+    color: #dddd;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.right {
+    width: 700px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.application {
+    position: relative;
+    width: 95px;
+    height: 100px;
+    border-radius: 30px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s ease;
+    box-shadow: 0 4px 10px #000;
+}
+
+.application:hover {
+    scale: 1.1;
+}
+
+.application h2 {
+    color: red;
+    font-size: 4rem;
+}
+
+.text-h2 {
+    position: absolute;
+    bottom: -2.5rem;
+}
+
+.text-h2 h2 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: #000;
+}
