@@ -60,15 +60,15 @@ body {
 }
 
 .all {
-    width: 100%;
+    width: 90%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
+    gap: 40px;
 }
 
 .result {
-    width: 500px;
+    width: 90%;
     height: 100%;
     margin: 50px 0 0 40px;
 }
@@ -151,7 +151,7 @@ body {
 }
 
 .right {
-    width: 700px;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -196,4 +196,21 @@ body {
     font-size: 1.4rem;
     font-weight: 100;
     color: #000;
+}
+
+@media (max-width: 1000px) {
+    .all {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        display: grid;
+    }
+    .result {
+        margin: auto;
+    }
+    .right {
+        margin: auto;
+    }
+    .app-result {
+        transform: translateY(-77rem);
+    }
 }
